@@ -17,6 +17,16 @@
 		42BAE6C7141CE07F005F8432 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42BAE6C5141CE07F005F8432 /* MainWindow_iPhone.xib */; };
 		42BAE6CB141CE07F005F8432 /* ios_demoAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BAE6CA141CE07F005F8432 /* ios_demoAppDelegate_iPad.m */; };
 		42BAE6CE141CE07F005F8432 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42BAE6CC141CE07F005F8432 /* MainWindow_iPad.xib */; };
+		42BAE6DA141CE0CA005F8432 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BAE6AF141CE07F005F8432 /* UIKit.framework */; };
+		42BAE6DB141CE0CA005F8432 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BAE6B1141CE07F005F8432 /* Foundation.framework */; };
+		42BAE6DC141CE0CA005F8432 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BAE6B3141CE07F005F8432 /* CoreGraphics.framework */; };
+		42BAE6E2141CE0CA005F8432 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42BAE6E0141CE0CA005F8432 /* InfoPlist.strings */; };
+		42BAE6E5141CE0CA005F8432 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BAE6E4141CE0CA005F8432 /* main.m */; };
+		42BAE6FB141CEF4F005F8432 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BAE6FA141CEF4F005F8432 /* GHUnitIOS.framework */; };
+		42BAE6FE141CF1F4005F8432 /* MyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BAE6FD141CF1F4005F8432 /* MyTest.m */; };
+		42BAE701141CF299005F8432 /* ExampleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BAE700141CF299005F8432 /* ExampleTest.m */; };
+		42BAE704141CF39D005F8432 /* ExampleAsyncTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BAE703141CF39D005F8432 /* ExampleAsyncTest.m */; };
+		42BAE707141D00AC005F8432 /* runtest.sh in Resources */ = {isa = PBXBuildFile; fileRef = 42BAE706141D00AC005F8432 /* runtest.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,18 +34,29 @@
 		42BAE6AF141CE07F005F8432 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42BAE6B1141CE07F005F8432 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		42BAE6B3141CE07F005F8432 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		42BAE6B7141CE07F005F8432 /* ios-demo-Info.plist */ = {isa = PBXFileReference; path = "ios-demo-Info.plist"; sourceTree = "<group>"; };
+		42BAE6B7141CE07F005F8432 /* ios-demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ios-demo-Info.plist"; sourceTree = "<group>"; };
 		42BAE6B9141CE07F005F8432 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		42BAE6BB141CE07F005F8432 /* ios-demo-Prefix.pch */ = {isa = PBXFileReference; path = "ios-demo-Prefix.pch"; sourceTree = "<group>"; };
+		42BAE6BB141CE07F005F8432 /* ios-demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-demo-Prefix.pch"; sourceTree = "<group>"; };
 		42BAE6BC141CE07F005F8432 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		42BAE6BE141CE07F005F8432 /* ios_demoAppDelegate.h */ = {isa = PBXFileReference; path = ios_demoAppDelegate.h; sourceTree = "<group>"; };
+		42BAE6BE141CE07F005F8432 /* ios_demoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_demoAppDelegate.h; sourceTree = "<group>"; };
 		42BAE6BF141CE07F005F8432 /* ios_demoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_demoAppDelegate.m; sourceTree = "<group>"; };
-		42BAE6C2141CE07F005F8432 /* ios_demoAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = ios_demoAppDelegate_iPhone.h; path = iPhone/ios_demoAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		42BAE6C2141CE07F005F8432 /* ios_demoAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ios_demoAppDelegate_iPhone.h; path = iPhone/ios_demoAppDelegate_iPhone.h; sourceTree = "<group>"; };
 		42BAE6C3141CE07F005F8432 /* ios_demoAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ios_demoAppDelegate_iPhone.m; path = iPhone/ios_demoAppDelegate_iPhone.m; sourceTree = "<group>"; };
 		42BAE6C6141CE07F005F8432 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
-		42BAE6C9141CE07F005F8432 /* ios_demoAppDelegate_iPad.h */ = {isa = PBXFileReference; name = ios_demoAppDelegate_iPad.h; path = iPad/ios_demoAppDelegate_iPad.h; sourceTree = "<group>"; };
+		42BAE6C9141CE07F005F8432 /* ios_demoAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ios_demoAppDelegate_iPad.h; path = iPad/ios_demoAppDelegate_iPad.h; sourceTree = "<group>"; };
 		42BAE6CA141CE07F005F8432 /* ios_demoAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ios_demoAppDelegate_iPad.m; path = iPad/ios_demoAppDelegate_iPad.m; sourceTree = "<group>"; };
 		42BAE6CD141CE07F005F8432 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		42BAE6D8141CE0CA005F8432 /* ios-demo-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-demo-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42BAE6DF141CE0CA005F8432 /* ios-demo-test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ios-demo-test-Info.plist"; sourceTree = "<group>"; };
+		42BAE6E1141CE0CA005F8432 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42BAE6E3141CE0CA005F8432 /* ios-demo-test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-demo-test-Prefix.pch"; sourceTree = "<group>"; };
+		42BAE6E4141CE0CA005F8432 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42BAE6FA141CEF4F005F8432 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = "gh-unit/Project-iOS/build/Framework/GHUnitIOS.framework"; sourceTree = "<group>"; };
+		42BAE6FD141CF1F4005F8432 /* MyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTest.m; sourceTree = "<group>"; };
+		42BAE700141CF299005F8432 /* ExampleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleTest.m; sourceTree = "<group>"; };
+		42BAE703141CF39D005F8432 /* ExampleAsyncTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleAsyncTest.m; sourceTree = "<group>"; };
+		42BAE706141D00AC005F8432 /* runtest.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = runtest.sh; sourceTree = "<group>"; };
+		42BAE708141D00CD005F8432 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,13 +70,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42BAE6D5141CE0CA005F8432 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42BAE6DA141CE0CA005F8432 /* UIKit.framework in Frameworks */,
+				42BAE6DB141CE0CA005F8432 /* Foundation.framework in Frameworks */,
+				42BAE6DC141CE0CA005F8432 /* CoreGraphics.framework in Frameworks */,
+				42BAE6FB141CEF4F005F8432 /* GHUnitIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		42BAE6A0141CE07F005F8432 = {
 			isa = PBXGroup;
 			children = (
+				42BAE708141D00CD005F8432 /* Makefile */,
 				42BAE6B5141CE07F005F8432 /* ios-demo */,
+				42BAE6DD141CE0CA005F8432 /* ios-demo-test */,
 				42BAE6AE141CE07F005F8432 /* Frameworks */,
 				42BAE6AC141CE07F005F8432 /* Products */,
 			);
@@ -65,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				42BAE6AB141CE07F005F8432 /* ios-demo.app */,
+				42BAE6D8141CE0CA005F8432 /* ios-demo-test.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +107,7 @@
 		42BAE6AE141CE07F005F8432 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42BAE6FA141CEF4F005F8432 /* GHUnitIOS.framework */,
 				42BAE6AF141CE07F005F8432 /* UIKit.framework */,
 				42BAE6B1141CE07F005F8432 /* Foundation.framework */,
 				42BAE6B3141CE07F005F8432 /* CoreGraphics.framework */,
@@ -122,6 +158,29 @@
 			name = iPad;
 			sourceTree = "<group>";
 		};
+		42BAE6DD141CE0CA005F8432 /* ios-demo-test */ = {
+			isa = PBXGroup;
+			children = (
+				42BAE706141D00AC005F8432 /* runtest.sh */,
+				42BAE6DE141CE0CA005F8432 /* Supporting Files */,
+				42BAE6FD141CF1F4005F8432 /* MyTest.m */,
+				42BAE700141CF299005F8432 /* ExampleTest.m */,
+				42BAE703141CF39D005F8432 /* ExampleAsyncTest.m */,
+			);
+			path = "ios-demo-test";
+			sourceTree = "<group>";
+		};
+		42BAE6DE141CE0CA005F8432 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42BAE6DF141CE0CA005F8432 /* ios-demo-test-Info.plist */,
+				42BAE6E0141CE0CA005F8432 /* InfoPlist.strings */,
+				42BAE6E3141CE0CA005F8432 /* ios-demo-test-Prefix.pch */,
+				42BAE6E4141CE0CA005F8432 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,6 +201,24 @@
 			productReference = 42BAE6AB141CE07F005F8432 /* ios-demo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		42BAE6D7141CE0CA005F8432 /* ios-demo-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42BAE6F7141CE0CA005F8432 /* Build configuration list for PBXNativeTarget "ios-demo-test" */;
+			buildPhases = (
+				42BAE6D4141CE0CA005F8432 /* Sources */,
+				42BAE6D5141CE0CA005F8432 /* Frameworks */,
+				42BAE6D6141CE0CA005F8432 /* Resources */,
+				42BAE705141CFFCE005F8432 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-demo-test";
+			productName = "ios-demo-test";
+			productReference = 42BAE6D8141CE0CA005F8432 /* ios-demo-test.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -160,6 +237,7 @@
 			projectRoot = "";
 			targets = (
 				42BAE6AA141CE07F005F8432 /* ios-demo */,
+				42BAE6D7141CE0CA005F8432 /* ios-demo-test */,
 			);
 		};
 /* End PBXProject section */
@@ -175,7 +253,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42BAE6D6141CE0CA005F8432 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42BAE6E2141CE0CA005F8432 /* InfoPlist.strings in Resources */,
+				42BAE707141D00AC005F8432 /* runtest.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42BAE705141CFFCE005F8432 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh ios-demo-test/runtest.sh";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		42BAE6A7141CE07F005F8432 /* Sources */ = {
@@ -186,6 +290,17 @@
 				42BAE6C0141CE07F005F8432 /* ios_demoAppDelegate.m in Sources */,
 				42BAE6C4141CE07F005F8432 /* ios_demoAppDelegate_iPhone.m in Sources */,
 				42BAE6CB141CE07F005F8432 /* ios_demoAppDelegate_iPad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42BAE6D4141CE0CA005F8432 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42BAE6E5141CE0CA005F8432 /* main.m in Sources */,
+				42BAE6FE141CF1F4005F8432 /* MyTest.m in Sources */,
+				42BAE701141CF299005F8432 /* ExampleTest.m in Sources */,
+				42BAE704141CF39D005F8432 /* ExampleAsyncTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +329,14 @@
 				42BAE6CD141CE07F005F8432 /* en */,
 			);
 			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+		42BAE6E0141CE0CA005F8432 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42BAE6E1141CE0CA005F8432 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -281,6 +404,52 @@
 			};
 			name = Release;
 		};
+		42BAE6F8141CE0CA005F8432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/gh-unit/Project-iOS/build/Framework\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios-demo-test/ios-demo-test-Prefix.pch";
+				INFOPLIST_FILE = "ios-demo-test/ios-demo-test-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		42BAE6F9141CE0CA005F8432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/gh-unit/Project-iOS/build/Framework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios-demo-test/ios-demo-test-Prefix.pch";
+				INFOPLIST_FILE = "ios-demo-test/ios-demo-test-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -298,6 +467,14 @@
 			buildConfigurations = (
 				42BAE6D2141CE07F005F8432 /* Debug */,
 				42BAE6D3141CE07F005F8432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		42BAE6F7141CE0CA005F8432 /* Build configuration list for PBXNativeTarget "ios-demo-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42BAE6F8141CE0CA005F8432 /* Debug */,
+				42BAE6F9141CE0CA005F8432 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
