@@ -22,11 +22,11 @@
 		42BAE6DC141CE0CA005F8432 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BAE6B3141CE07F005F8432 /* CoreGraphics.framework */; };
 		42BAE6E2141CE0CA005F8432 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42BAE6E0141CE0CA005F8432 /* InfoPlist.strings */; };
 		42BAE6E5141CE0CA005F8432 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BAE6E4141CE0CA005F8432 /* main.m */; };
-		42BAE6FB141CEF4F005F8432 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BAE6FA141CEF4F005F8432 /* GHUnitIOS.framework */; };
 		42BAE6FE141CF1F4005F8432 /* MyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BAE6FD141CF1F4005F8432 /* MyTest.m */; };
 		42BAE701141CF299005F8432 /* ExampleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BAE700141CF299005F8432 /* ExampleTest.m */; };
 		42BAE704141CF39D005F8432 /* ExampleAsyncTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BAE703141CF39D005F8432 /* ExampleAsyncTest.m */; };
 		42BAE707141D00AC005F8432 /* runtest.sh in Resources */ = {isa = PBXBuildFile; fileRef = 42BAE706141D00AC005F8432 /* runtest.sh */; };
+		42BED0D6141D163500ABA7ED /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BED0D5141D163500ABA7ED /* GHUnitIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,12 +51,12 @@
 		42BAE6E1141CE0CA005F8432 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		42BAE6E3141CE0CA005F8432 /* ios-demo-test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-demo-test-Prefix.pch"; sourceTree = "<group>"; };
 		42BAE6E4141CE0CA005F8432 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		42BAE6FA141CEF4F005F8432 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = "gh-unit/Project-iOS/build/Framework/GHUnitIOS.framework"; sourceTree = "<group>"; };
 		42BAE6FD141CF1F4005F8432 /* MyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTest.m; sourceTree = "<group>"; };
 		42BAE700141CF299005F8432 /* ExampleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleTest.m; sourceTree = "<group>"; };
 		42BAE703141CF39D005F8432 /* ExampleAsyncTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleAsyncTest.m; sourceTree = "<group>"; };
 		42BAE706141D00AC005F8432 /* runtest.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = runtest.sh; sourceTree = "<group>"; };
 		42BAE708141D00CD005F8432 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		42BED0D5141D163500ABA7ED /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 				42BAE6DA141CE0CA005F8432 /* UIKit.framework in Frameworks */,
 				42BAE6DB141CE0CA005F8432 /* Foundation.framework in Frameworks */,
 				42BAE6DC141CE0CA005F8432 /* CoreGraphics.framework in Frameworks */,
-				42BAE6FB141CEF4F005F8432 /* GHUnitIOS.framework in Frameworks */,
+				42BED0D6141D163500ABA7ED /* GHUnitIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +107,7 @@
 		42BAE6AE141CE07F005F8432 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				42BAE6FA141CEF4F005F8432 /* GHUnitIOS.framework */,
+				42BED0D5141D163500ABA7ED /* GHUnitIOS.framework */,
 				42BAE6AF141CE07F005F8432 /* UIKit.framework */,
 				42BAE6B1141CE07F005F8432 /* Foundation.framework */,
 				42BAE6B3141CE07F005F8432 /* CoreGraphics.framework */,
@@ -413,6 +413,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/gh-unit/Project-iOS/build/Framework\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -436,6 +437,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/gh-unit/Project-iOS/build/Framework\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios-demo-test/ios-demo-test-Prefix.pch";
@@ -469,6 +471,7 @@
 				42BAE6D3141CE07F005F8432 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42BAE6F7141CE0CA005F8432 /* Build configuration list for PBXNativeTarget "ios-demo-test" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +480,7 @@
 				42BAE6F9141CE0CA005F8432 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
