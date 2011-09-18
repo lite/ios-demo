@@ -23,18 +23,19 @@
 }
 
 - (void)testFileExistsAtPath {
-    NSFileManager *fileManger = [NSFileManager defaultManager];
-    if (fileManger){
-        GHTestLog([fileManger fileExistsAtPath:@"ios-demo-test-Info"]? "YES":"NO");
-    }
+//    NSFileManager *fileManger = [NSFileManager defaultManager];
+//    if (fileManger) {
+//        GHTestLog([fileManger fileExistsAtPath:@"ios-demo-test-Info"] ? "YES" : "NO");
+//    }
 }
 
 - (void)testPathForResource {
     NSBundle *bundle = [NSBundle mainBundle];
     GHTestLog(@"[bundle bundleIdentifier]: %@", [bundle bundleIdentifier]);
     GHTestLog(@"[bundle bundlePath]: %@", [bundle bundlePath]);
-    NSString *fullName = [bundle pathForResource:"ios-demo-test-Info" ofType:@"plist"];
+    NSString *fullName = [bundle pathForResource:@"test" ofType:@"plist"];
     GHTestLog(fullName);
+    GHTestLog([NSHomeDirectory() stringByAppendingString:@"/Documents/"]);
 }
 
 - (void)testDictionaryWithContentsOfFile {
@@ -44,12 +45,22 @@
     NSString *path = [documentsDirectoryPath
             stringByAppendingPathComponent:@"myApp.plist"];
     NSMutableDictionary *plist = [NSDictionary dictionaryWithContentsOfFile:path];
-    if (plist){
-        GHTestLog([[plist valueForKey:@"myKey"] intValue]);
-        GHTestLog([[plist valueForKey:@"myKey2"] boolValue]);
+    if (plist) {
+        GHTestLog(@"%d", [[plist valueForKey:@"int"] intValue]);
+        GHTestLog([plist valueForKey:@"bool"]);
 
         [plist setValue:@"value" forKey:@"key"];
         [plist writeToFile:path atomically:YES];
+    }
+}
+
+- (void)testEnumeratorAtPath {
+    id importFile;
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSDirectoryEnumerator *dirEnum = [fileManager enumeratorAtPath:@"*.*"];
+    while ((importFile =[dirEnum nextObject])) {
+        NSLog(@"%@", [importFile pathExtension]);
+        NSLog(@"%@", [importFile path]);
     }
 }
 

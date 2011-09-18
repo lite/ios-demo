@@ -8,12 +8,12 @@
 @implementation NSSelectorTest
 
 - (void) lotIt:(NSString *) string{
-    NSLog(string);
+    NSLog(@"%@", string);
 }
 
 - (void)testMakeObjectsPerformSelector {
     NSString *method = NSStringFromSelector(@selector(logIt:));
-//    NSSelectorFromString
+    NSLog(@"%@", method);
     GHTestLog(@"it should be print all objects in array with selector.");
 }
 

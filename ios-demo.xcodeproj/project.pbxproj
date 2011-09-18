@@ -38,6 +38,7 @@
 		42BED0D6141D163500ABA7FF /* NSThreadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BED0D6141D163500ABA7FE /* NSThreadTest.m */; };
 		42BED0D6141D163500ABA801 /* NSTimerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BED0D6141D163500ABA800 /* NSTimerTest.m */; };
 		42BED0D6141D163500ABA803 /* NSPathTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BED0D6141D163500ABA802 /* NSPathTest.m */; };
+		42FFCFF51426530F00B98B68 /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42FFCFF41426530F00B98B68 /* test.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		42BED0D6141D163500ABA7FE /* NSThreadTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSThreadTest.m; sourceTree = "<group>"; };
 		42BED0D6141D163500ABA800 /* NSTimerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerTest.m; sourceTree = "<group>"; };
 		42BED0D6141D163500ABA802 /* NSPathTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSPathTest.m; sourceTree = "<group>"; };
+		42FFCFF41426530F00B98B68 /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = test.plist; path = Resources/test.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 		42BAE6DD141CE0CA005F8432 /* ios-demo-test */ = {
 			isa = PBXGroup;
 			children = (
+				42FFCFF2142652EE00B98B68 /* Resources */,
 				42BED0D6141D163500ABA802 /* NSPathTest.m */,
 				42BED0D6141D163500ABA800 /* NSTimerTest.m */,
 				42BED0D6141D163500ABA7FE /* NSThreadTest.m */,
@@ -212,6 +215,14 @@
 				42BAE6E4141CE0CA005F8432 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42FFCFF2142652EE00B98B68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42FFCFF41426530F00B98B68 /* test.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +303,7 @@
 			files = (
 				42BAE6E2141CE0CA005F8432 /* InfoPlist.strings in Resources */,
 				42BAE707141D00AC005F8432 /* runtest.sh in Resources */,
+				42FFCFF51426530F00B98B68 /* test.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +402,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -408,7 +421,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -452,7 +466,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -475,7 +490,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

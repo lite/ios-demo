@@ -35,7 +35,7 @@
 - (void)testArrayIterator {
     NSArray *array = [NSArray arrayWithObjects:@"foo", @"bar", nil];
     for (NSString *string in array) {
-        NSLog(string);
+        NSLog(@"%@", string);
     }
     GHTestLog(@"it should be print all objects in array.");
 }
@@ -44,7 +44,7 @@
     NSArray *array = [NSArray arrayWithObjects:@"foo", @"bar", nil];
     NSArray *sortedArray = [array sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
     for (NSString *string in sortedArray) {
-        NSLog(string);
+        NSLog(@"%@", string);
     }
     GHTestLog(@"it should be print all objects in array by sorted.");
 }
