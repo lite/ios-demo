@@ -1,3 +1,14 @@
+CheckStyle
+====
+
+scan-build -k -V xcodebuild
+
+Test Coverage
+====
+Normally to set up code coverage on Xcode, you turn on the "Instrument Program Flow" (-fprofile-arcs) and "Generate Test Coverage Files" (-ftest-coverage) flags, and add libgcov (-lgcov). 
+
+gcovr -r . -x -e “.*Test.*” -e “.*GoogleToolbox.*” -e “.*Source Xternal.*” 1>coverage.xml
+
 Jenkins
 ====
 

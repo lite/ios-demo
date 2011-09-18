@@ -7,3 +7,6 @@ clean:
 
 test:
 	GHUNIT_CLI=1 xcodebuild -target ios-demo-test -configuration Debug -sdk iphonesimulator build	
+
+check:
+	~/bin/checker/scan-build xcodebuild -configuration Debug -sdk iphonesimulator

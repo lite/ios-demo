@@ -1,25 +1,26 @@
 #import <GHUnitIOS/GHUnit.h> // ios
 //#import <GHUnit/GHUnit.h> // osx
 
-@interface ExampleAsyncTest : GHAsyncTestCase { }
+@interface ExampleAsyncTest : GHAsyncTestCase {
+}
 @end
 
 @implementation ExampleAsyncTest
 
 - (void)testURLConnection {
-    
+
     // Call prepare to setup the asynchronous action.
     // This helps in cases where the action is synchronous and the
     // action occurs before the wait is actually called.
     [self prepare];
-    
+
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]];
     NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self startImmediately:YES];
-    
+
     // Wait until notify called for timeout (seconds); If notify is not called with kGHUnitWaitStatusSuccess then
     // we will throw an error.
     [self waitForStatus:kGHUnitWaitStatusSuccess timeout:10.0];
-    
+
     [connection release];
 }
 
@@ -36,6 +37,6 @@
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     GHTestLog(@"%@", [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease]);
-} 
+}
 
 @end

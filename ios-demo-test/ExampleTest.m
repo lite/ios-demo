@@ -1,7 +1,8 @@
 #import <GHUnitIOS/GHUnit.h> // ios
 //#import <GHUnit/GHUnit.h>	// osx
 
-@interface ExampleTest : GHTestCase { }
+@interface ExampleTest : GHTestCase {
+}
 @end
 
 @implementation ExampleTest
@@ -26,15 +27,15 @@
 
 - (void)tearDown {
     // Run after each test method
-}   
+}
 
-- (void)testFoo {       
+- (void)testFoo {
     NSString *a = @"foo";
     GHTestLog(@"I can log to the GHUnit test console: %@", a);
-    
+
     // Assert a is not NULL, with no custom error description
     GHAssertNotNULL(a, nil);
-    
+
     // Assert equal objects, add custom error description
     NSString *b = @"bar";
     GHAssertEqualObjects(a, b, @"A custom error message. a should be equal to: %@.", b);

@@ -20,6 +20,7 @@ export NSHangOnUncaughtException=YES
 export NSAutoreleaseFreedObjectCheckEnabled=YES
 
 export DYLD_FRAMEWORK_PATH="$CONFIGURATION_BUILD_DIR"
+export CFFIXED_USER_HOME="$USER_LIBRARY_DIR/Application Support/iPhone Simulator/User"
 
 TEST_TARGET_EXECUTABLE_PATH="$TARGET_BUILD_DIR/$EXECUTABLE_PATH"
 
